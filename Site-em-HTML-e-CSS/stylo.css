@@ -4,6 +4,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #eee;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 15px 5px;
 }
 
 body {
@@ -23,6 +34,11 @@ a:hover {
 
 ul {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
+    /* para imagem ficar oda dentro do box*/
 }
 
 
@@ -84,18 +100,18 @@ ul {
 
 .header-menu {
     float: right;
-    padding: 9px 0;
+    padding: 6px 0;
     text-align: right;
 }
 
 .header-menu p {
     color: #579add;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .header-menu ul li {
     display: inline-block;
-    margin-left: 10 px
+    margin-left: 13px
 }
 
 
@@ -146,4 +162,127 @@ ul {
 .tecnologias-titulo span {
     border-bottom: 4px solid #579add;
     padding-bottom: 10px;
+}
+
+.tecnologias-col {
+    float: left;
+    width: 30.66%;
+    margin-right: 4%;
+}
+
+.tecnologias-col:last-child {
+    margin-right: 0%;
+}
+
+
+/* efeito na imagem */
+
+.tecnologias-col:hover .cover img {
+    transform: scale(1.2);
+}
+
+.tecnologias-col .cover {
+    height: 204px;
+}
+
+.tecnologias-col .cover img {
+    transition: all .05s ease;
+}
+
+
+/* fim efeito na imagem */
+
+.tecnologias-col h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.tecnologias-col a {
+    color: #999;
+}
+
+.tecnologias-col a :hover {
+    color: #579add;
+}
+
+
+/* CONTATO
+**************************************************************/
+
+.contato {
+    padding: 100px 0;
+    background: #2c3e50;
+}
+
+.contato h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.contato-col {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato-col {
+    width: 48%;
+    float: left;
+}
+
+.contato-col:nth-child(2) {
+    float: right;
+}
+
+.contato-col label {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.contato-col label span {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contato-col label input,
+.contato-col textarea {
+    float: left;
+    width: 100%;
+}
+
+.contato-col textarea {
+    height: 154px;
+}
+
+.contato p {
+    float: left;
+    width: 100%;
+    text-align: right;
+}
+
+.contato p input {
+    padding: 10px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+    background: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.contato p input:hover {
+    background: #020a11;
+}
+
+
+/* Roda pé 
+********************************************************/
+
+.roda-pe {
+    text-align: center;
 }
